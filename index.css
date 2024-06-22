@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  column-gap: 10px;
+
+  .item {
+    height: 250px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .item:nth-child(2n) {
+    background-color: lightblue;
+  }
+
+  .item:hover {
+    background-color: orange;
+  }
+}
